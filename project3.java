@@ -42,7 +42,7 @@ class Bank {
             try {
                 atm.acceptInput();
                 atm.verify();
-                return; // Exit after successful verification
+                return; 
             } catch (InvalidUserException e) {
                 System.out.println(e.getMessage());
                 attempts++;
